@@ -1,0 +1,55 @@
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background-image: url('sekelas.jpeg');
+    background-size: cover;
+    background-position: center;
+    color:white;
+    text-align:center;
+    padding:100px;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+
+}
+
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    padding:14px;
+    display:inline-block;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background:#4CAF50;
+}
+
+.content{
+    padding:20px;
+    text-align:center;
+}
+
+.gallery{
+    text-align:center;
+}
+
+.gallery img{
+    width:200px;
+    margin:10px;
+    border-radius:10px;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
