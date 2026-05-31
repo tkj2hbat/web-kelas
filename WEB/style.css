@@ -175,3 +175,34 @@ font-size:16px;
 }
 
 }
+
+.menu-toggle{
+    display:none;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+@media (max-width:600px){
+
+    .menu-toggle{
+        display:block;
+        text-align:center;
+    }
+
+    .menu-links{
+        display:none;
+        margin-top:10px;
+    }
+
+    .menu-links.show{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .menu-links a{
+        display:block;
+        margin:10px 0;
+    }
+}

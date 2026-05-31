@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+function toggleMenu() {
+    document.getElementById("menuLinks").classList.toggle("show");
+}
+</script>
+
 <body>
 
 <header>
@@ -14,10 +20,16 @@
 </header>
 
 <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="anggota.html">Anggota</a>
-    <a href="moment.html">Moment</a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰ Menu
+    </div>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="anggota.html">Anggota</a>
+        <a href="moment.html">Moment</a>
+    </div>
 </nav>
 
 <section class="content">
