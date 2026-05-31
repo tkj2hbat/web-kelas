@@ -7,7 +7,11 @@
 
 <link rel="stylesheet" href="style.css">
 </head>
-
+<script>
+function toggleMenu() {
+    document.getElementById("menuLinks").classList.toggle("show");
+}
+</script>
 <body>
 
 <header>
@@ -15,10 +19,16 @@
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="galeri.html">Galeri</a>
-<a href="anggota.html" class="active">Anggota</a>
-<a href="moment.html">Moment</a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰ Menu
+    </div>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="index.html">Home</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="anggota.html" class="active">Anggota</a>
+        <a href="moment.html">Moment</a>
+    </div>
 </nav>
 
 <section class="anggota-container">
@@ -208,6 +218,13 @@
 <footer>
 <p>© 2026 Web Kelas</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menuLinks").classList.toggle("show");
+}
+</script>
+
 
 </body>
 </html>
